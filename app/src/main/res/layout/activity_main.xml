@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="next"
+        tools:layout_editor_absoluteX="29dp"
+        tools:layout_editor_absoluteY="627dp" />
+
+    <Button
+        android:id="@+id/addPlaylist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View"
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="633dp" />
+
+    <Button
+        android:id="@+id/exitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="Exit"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="633dp" />
+
+    <TextView
+        android:id="@+id/songName"
+        android:layout_width="281dp"
+        android:layout_height="54dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginBottom="20dp"
+        android:text="Song"
+        app:layout_constraintBottom_toTopOf="@+id/artistName"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/artistName"
+        android:layout_width="288dp"
+        android:layout_height="52dp"
+        android:layout_marginEnd="59dp"
+        android:layout_marginBottom="22dp"
+        android:text="Artist"
+        app:layout_constraintBottom_toTopOf="@+id/userRating"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/userRating"
+        android:layout_width="289dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="54dp"
+        android:layout_marginBottom="19dp"
+        android:text="rating"
+        app:layout_constraintBottom_toTopOf="@+id/userComments"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/userComments"
+        android:layout_width="278dp"
+        android:layout_height="57dp"
+        android:layout_marginEnd="65dp"
+        android:layout_marginBottom="307dp"
+        android:text="Comments"
+        app:layout_constraintBottom_toTopOf="@+id/nextButton"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/listViewButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        tools:layout_editor_absoluteX="139dp"
+        tools:layout_editor_absoluteY="510dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
